@@ -44,7 +44,7 @@ st.write("Data Analysis: EDA, data introduction and detailed data analysis ")
 st.write("Model Analysis: Different models implemented for this use case with their comparison of best and worst performance")
 
 # Path variables
-BASE_PATH = "/Users/sakshidoshi/Downloads/petfinder-pawpularity-score/"
+BASE_PATH = "petfinder-pawpularity-score/"
 TRAIN_PATH = BASE_PATH + "train.csv"
 TEST_PATH = BASE_PATH + "test.csv"
 TRAIN_IMAGES = glob(BASE_PATH + "train/*.jpg")
@@ -81,7 +81,7 @@ if selected_tab == "Data Analysis":
     st.subheader("Filtered Data")
     st.write(filtered_data)
 
-    image_folder_path = "/Users/sakshidoshi/Downloads/petfinder-pawpularity-score/train"
+    image_folder_path = "petfinder-pawpularity-score/train"
 
 # Get a list of all image files in the folder
     #image_files = [f for f in os.listdir(image_folder_path) if f.lower().endswith((".png", ".jpg", ".jpeg"))]
@@ -209,7 +209,7 @@ if selected_tab == "Data Analysis":
     image_column_task2 = st.columns(3)
     for index, row in top_3_images_task2.iterrows():
         with image_column_task2[index % 3]:
-            image_path = os.path.join("/Users/sakshidoshi/Downloads/petfinder-pawpularity-score/train", f"{row['Id']}.jpg")
+            image_path = os.path.join("petfinder-pawpularity-score/train", f"{row['Id']}.jpg")
             image = Image.open(image_path)
             st.image(image, caption=f"Popularity: {row['Pawpularity']}", use_column_width=True)
 
@@ -227,7 +227,7 @@ if selected_tab == "Data Analysis":
     image_column_task3 = st.columns(3)
     for index, row in bottom_3_images_task3.iterrows():
         with image_column_task3[index % 3]:
-            image_path = os.path.join("/Users/sakshidoshi/Downloads/petfinder-pawpularity-score/train", f"{row['Id']}.jpg")
+            image_path = os.path.join("petfinder-pawpularity-score/train", f"{row['Id']}.jpg")
             image = Image.open(image_path)
             st.image(image, caption=f"Popularity: {row['Pawpularity']}", use_column_width=True)
 elif selected_tab == "Model Analysis":
