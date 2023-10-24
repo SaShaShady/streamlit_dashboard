@@ -4,6 +4,10 @@ Pandas
 Seaborn
 Plotly
 Matplotlib
-Sklearn
+scikit-learn
 torch
 tensorflow
+pillow
+xgboost 
+lightgbm
+catboost
