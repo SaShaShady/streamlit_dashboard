@@ -50,3 +50,4 @@ with col2:
     rating_count_year = rating_count_year.reset_index()
     figpx = px.line(rating_count_year, x = 'genre', y = 'score')
     st.plotly_chart(figpx)
+

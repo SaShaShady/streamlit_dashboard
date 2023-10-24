@@ -5,3 +5,5 @@ Seaborn
 Plotly
 Matplotlib
 Sklearn
+torch
+tensorflow
